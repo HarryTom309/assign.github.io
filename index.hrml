@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Help Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Assignment Help</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Expert Assignment & Dissertation Help</h1>
+            <p>Get professional academic assistance for your assignments and dissertations. On-time delivery, plagiarism-free, and high quality!</p>
+            <a href="contact.html" class="btn">Get Started</a>
+            <a href="services.html" class="btn secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Assignment Writing</h3>
+            <p>High-quality essays, coursework, and reports.</p>
+        </div>
+        <div class="service-box">
+            <h3>Dissertation Assistance</h3>
+            <p>Expert guidance for research and thesis writing.</p>
+        </div>
+        <div class="service-box">
+            <h3>Proofreading & Editing</h3>
+            <p>Ensure clarity, accuracy, and correct formatting.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Assignment Help Services. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
