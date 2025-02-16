@@ -33,6 +33,7 @@ nav {
     color: #ddd;
 }
 
+/* Navbar Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -55,27 +56,71 @@ nav {
     color: white;
     text-align: center;
     padding: 100px 20px;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
+/* Semi-Transparent Overlay */
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Hero Content */
 .hero-content {
     max-width: 600px;
     margin: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
     font-size: 32px;
-    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
     font-size: 18px;
+    color: #f1f1f1;
     margin-bottom: 20px;
 }
 
+/* Info Box Above Get Started */
+.info-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Button Styling */
 .btn {
     background: blue;
     color: white;
@@ -115,14 +160,3 @@ footer {
     text-align: center;
     padding: 15px;
     background: #333;
-    color: white;
-    margin-top: 50px;
-}
-
-/* Slider Animation */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-}
