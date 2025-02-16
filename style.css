@@ -33,7 +33,6 @@ nav {
     color: #ddd;
 }
 
-/* Navbar Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -56,71 +55,27 @@ nav {
     color: white;
     text-align: center;
     padding: 100px 20px;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
 }
 
-/* Semi-Transparent Overlay */
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-}
-
-/* Hero Content */
 .hero-content {
     max-width: 600px;
     margin: auto;
-    position: relative;
-    z-index: 2;
 }
 
 .hero h1 {
     font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 18px;
-    color: #f1f1f1;
     margin-bottom: 20px;
 }
 
-/* Info Box Above Get Started */
-.info-box {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    text-align: left;
-    color: #fff;
-}
-
-.info-box h3 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.info-box ul {
-    list-style: none;
-    padding: 0;
-}
-
-.info-box li {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-/* Button Styling */
 .btn {
     background: blue;
     color: white;
@@ -160,3 +115,142 @@ footer {
     text-align: center;
     padding: 15px;
     background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Slider Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+header {
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: blue;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn.secondary {
+    background: gray;
+}
+
+/* Services Slider */
+.slider {
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.service-box {
+    flex: 0 0 100%;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Slider Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
